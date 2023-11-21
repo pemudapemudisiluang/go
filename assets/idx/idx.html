@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kirim ke Bot Telegram</title>
+    <link rel="stylesheet" href="idx.css">
+</head>
+<body>
+    <h2>Form Kirim ke Bot Telegram</h2>
+    <form action="idx.php" method="post" enctype="multipart/form-data">
+        <label for="gambar">Gambar:</label>
+        <input type="file" name="gambar" required><br>
+
+        <label for="judul">Judul:</label>
+        <input type="text" name="judul" required><br>
+
+        <label for="artikel">Artikel:</label>
+        <textarea name="artikel" rows="4" required></textarea><br>
+
+        <label for="username">Username Instagram:</label>
+        <input type="text" name="username" required><br>
+
+        <label for="profil">Foto Profil:</label>
+        <input type="file" name="profil" required><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
