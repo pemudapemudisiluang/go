@@ -2002,16 +2002,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-.popup-container {
+
+
+
+/* Styling untuk popup */
+        .popup-container {
             position: fixed;
-            bottom: 80px;
-            right: 30px;
+            bottom: 80px; /* Ganti dengan nilai yang sesuai */
+            right: 20px;
             background-color: #3498db;
             color: #fff;
             padding: 10px;
             border-radius: 50%;
             cursor: pointer;
             z-index: 1;
+            animation: bounce 1s infinite;
         }
 
         /* Styling untuk animasi */
@@ -2025,8 +2030,4 @@ textarea.form-input::-webkit-resizer { display: none; }
             60% {
                 transform: translateY(-10px);
             }
-        }
-
-        .popup-container:hover {
-            animation: bounce 1s infinite;
         }
