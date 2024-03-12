@@ -1126,35 +1126,6 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script>
-// Get the video container element
-var videoContainer = document.getElementById("video-container");
-
-// Get the close button element
-var close = document.getElementById("close");
-
-// Get the image element
-var image = document.getElementById("image");
-
-// Check if the ad has already been viewed by this IP
-if (localStorage.getItem("adViewed") !== "true") {
-  // Add a click event listener to the image
-  image.addEventListener("click", function() {
-    // Set the ad as viewed for this IP
-    localStorage.setItem("adViewed", "true");
-
-    // Open the link when the image is clicked
-    window.open("your_target_link", "_blank");
-  });
-}
-
-// Add a click event listener to the close button
-close.addEventListener("click", function() {
-  // Hide the video container
-  videoContainer.style.display = "none";
-});
-</script>
-
 </body>
 
             </html>
