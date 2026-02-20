@@ -1,1112 +1,434 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pemuda Pemudi Siluang</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remaja Sholihin Siluang</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="nav-logo">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="22" fill="#2E7D32" stroke="#4CAF50" stroke-width="2"/>
+            <path d="M24 8 L26 18 L36 18 L28 24 L31 34 L24 28 L17 34 L20 24 L12 18 L22 18 Z" fill="#A5D6A7"/>
+            <circle cx="24" cy="24" r="5" fill="white" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="nav-brand-text">
+          <span class="brand-main">Remaja Sholihin</span>
+          <span class="brand-sub">Siluang</span>
+        </div>
+      </div>
 
-  <main>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#beranda" class="nav-link">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang</a></li>
+        <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+        <li><a href="#berita" class="nav-link">Berita</a></li>
+        <li><a href="#galeri" class="nav-link">Galeri</a></li>
+        <li><a href="#kontak" class="nav-link nav-cta">Kontak</a></li>
+      </ul>
 
-    <!--
-      - #SIDEBAR
-    -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <aside class="sidebar" data-sidebar>
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Organisasi Pemuda Pemudi Aktif
+      </div>
+      <h1 class="hero-title reveal">
+        Remaja<br/>
+        <em>Sholihin</em><br/>
+        Siluang
+      </h1>
+      <p class="hero-sub reveal">
+        Wadah kreativitas dan kebersamaan pemuda pemudi dalam kegiatan keagamaan, sosial, dan kebangsaan.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#kegiatan" class="btn btn-primary">
+          <i class="fas fa-calendar-alt"></i> Lihat Kegiatan
+        </a>
+        <a href="#berita" class="btn btn-outline">
+          <i class="fas fa-newspaper"></i> Lihat Berita
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num">150+</span><span class="stat-label">Anggota</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Kegiatan</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Tahun Aktif</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-      <div class="sidebar-info">
+  <!-- TENTANG -->
+  <section class="tentang" id="tentang">
+    <div class="container">
+      <div class="tentang-grid">
+        <div class="tentang-visual reveal">
+          <div class="visual-card main-card">
+            <div class="visual-img-placeholder">
+              <i class="fas fa-users"></i>
+              <span>Foto Kegiatan</span>
+            </div>
+          </div>
+          <div class="visual-card accent-card">
+            <i class="fas fa-mosque"></i>
+            <span>Aktif & Berkarya</span>
+          </div>
+          <div class="visual-badge">
+            <i class="fas fa-star"></i>
+            <span>Sejak 2013</span>
+          </div>
+        </div>
+        <div class="tentang-text reveal">
+          <div class="section-label">Tentang Kami</div>
+          <h2 class="section-title">Bersama Membangun <em>Generasi Unggul</em></h2>
+          <p>
+            Remaja Sholihin Siluang adalah organisasi pemuda pemudi yang berdiri untuk mewadahi kreativitas, semangat, dan potensi generasi muda di lingkungan Siluang dan sekitarnya.
+          </p>
+          <p>
+            Kami aktif dalam berbagai kegiatan mulai dari keagamaan, sosial kemasyarakatan, peringatan hari nasional, hingga pengembangan diri pemuda. Kami percaya bahwa pemuda yang aktif dan berkarakter akan menjadi pilar kemajuan bangsa.
+          </p>
+          <div class="tentang-points">
+            <div class="point">
+              <div class="point-icon"><i class="fas fa-mosque"></i></div>
+              <div>
+                <strong>Kegiatan Keagamaan</strong>
+                <span>Pengajian, Ramadhan, hari besar Islam</span>
+              </div>
+            </div>
+            <div class="point">
+              <div class="point-icon"><i class="fas fa-flag"></i></div>
+              <div>
+                <strong>Event Nasional</strong>
+                <span>Lomba 17 Agustus dan hari nasional lainnya</span>
+              </div>
+            </div>
+            <div class="point">
+              <div class="point-icon"><i class="fas fa-hands-helping"></i></div>
+              <div>
+                <strong>Bakti Sosial</strong>
+                <span>Membantu masyarakat dan lingkungan sekitar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/logo/my-avatar.png" alt="IMG" width="80">
-        </figure>
+  <!-- KEGIATAN -->
+  <section class="kegiatan" id="kegiatan">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Program Kami</div>
+        <h2 class="section-title">Kegiatan <em>Unggulan</em></h2>
+        <p>Berbagai kegiatan yang kami jalankan untuk pemuda dan masyarakat</p>
+      </div>
+      <div class="kegiatan-grid">
 
-        <div class="info-content">
-          <h1 class="name" title="Pemuda Pemudi Siluang">Pemuda Pemudi Siluang</h1>
-
-          <p class="title">Organisasi Pemuda/i</p>
+        <div class="keg-card reveal" data-delay="0">
+          <div class="keg-icon"><i class="fas fa-quran"></i></div>
+          <div class="keg-tag">Keagamaan</div>
+          <h3>Pengajian & Keagamaan</h3>
+          <p>Kegiatan rutin pengajian, kajian Islam, dan pembinaan akhlak untuk seluruh anggota.</p>
+          <div class="keg-footer">
+            <span><i class="fas fa-calendar"></i> Rutin Mingguan</span>
+          </div>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:pemudapemudisiluang@gmail.com" class="contact-link">pemudapemudisiluang@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Contact</p>
-
-              <a href="/assets/contact/contact.html" class="contact-link">Hubungi Kami? Klik disini!</a>
-            </div>
-
-          </li>
-          
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="code-slash"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Version</p>
-
-              <a href="./assets/update/update.html" class="contact-link">v2.4.1</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Siluang, Jorong Bulakan</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://facebook.com/groups/164675449954487/" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://youtube.com/@PemudaPemudiSiluang?si=8k3tw0oJ8Kp6GWk8" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://instagram.com/pemudapemudisiluang" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Beranda</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Visi Misi</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Kegiatan</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Donasi</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Lainnya</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-      
-      
-      
-      
-      
-
-      <article class="beranda  active" data-page="beranda">
-
-        <header>
-          <h2 class="h2 article-title">About</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Pemuda pemudi siluang adalah sebuah Organisasi kepemudaan yang berada di Dusun Siluang Jorong Bulakan.
-          </p>
-
-          <p>
-            Organisasi kepemudaan ini bertujuan untuk menyatukan pemuda agar selalu aktif dan bermanfaat bagi masyarat dan orang banyak.
-          </p>
-        </section>
-
-        <section class="pemuda/i">
-
-
-
-      <!--
-        - #For You
-      -->
-      
-      
-      
-      
-          
-            
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h2 class="h2 service-title">Struktur<hr></h2>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/ic/icon-design.png
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Ketua</h4>
-
-                <p class="service-item-text">
-                  Harun Alfala
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/ic/icon-dev.png" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Wakil</h4>
-
-                <p class="service-item-text">
-                  Hasim & Farhan
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/ic/icon-apn.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Sekretaris</h4>
-
-                <p class="service-item-text">
-                 Nabila Riski Alfahmi
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/ic/iconz-1.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Wakil Sekretaris</h4>
-
-                <p class="service-item-text">
-                 Wulan Ramayani
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/ic/icon-app.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Bendahara</h4>
-
-                <p class="service-item-text">
-                  Nur Fitri
-                </p>
-              </div>
-
-            </li>
-            
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/ic/iconz-2.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title"> Wakil Bendahara</h4>
-
-                <p class="service-item-text">
-                  Silvia
-                </p>
-              </div>
-              
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/ic/iconz-3.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Desain Kreatif</h4>
-
-                <p class="service-item-text">
-                  Ardi Alvarizi
-                </p>
-              </div>
-
-            </li>
-
-            </li>
-
-          </ul>
-
-        </section>
-            
-            
-        <!--
-          - Anggota
-        -->
-        
-
-       
-        <!--
-          - Komentar
-        -->
-
-        <section class="testimonials">
-          <br/><h2 class="h2 testimonials-title">Komentar<hr></h2>
-
-          <ul class="testimonials-list has-scrollbar">
-
-<li class="testimonials-item">
-  <div class="content-card" data-testimonials-item>
-    <figure class="testimonials-avatar-box">
-      <img src="./assets/images/pp/pp-1.png" alt="PNG" width="60" data-testimonials-avatar>
-    </figure>
-
-    <div class="h4 testimonials-item-title" data-testimonials-title>
-      @harunala
-    </div>
-
-    <div class="testimonials-text" data-testimonials-text>
-      <p>
-        Kerennnn 🤟
-      </p>
-    </div>
-  </div>
-</li>
-            
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/pp/pp-2.png" alt="PNG" width="60" data-testimonials-avatar>
-                </figure>
-
-                <div class="h4 testimonials-item-title" data-testimonials-title>@ivory_roses21</div>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                     wuihhhhhhhh
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/pp/pp-3.png" alt="JPG" width="60" data-testimonials-avatar>
-                </figure>
-
-                <div class="h4 testimonials-item-title" data-testimonials-title>@fitriiiyy__</div>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    yo sontiang ketuaa yaa
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/pp/pp-4.png" alt="PNG" width="60" data-testimonials-avatar>
-                </figure>
-
-                <div class="h4 testimonials-item-title" data-testimonials-title>@akunfake</div>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                   Welplayed
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">12 Nov, 2023</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a coporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+        <div class="keg-card reveal" data-delay="1">
+          <div class="keg-icon moon"><i class="fas fa-moon"></i></div>
+          <div class="keg-tag ramadan">Ramadhan</div>
+          <h3>Event Ramadhan</h3>
+          <p>Tarawih bersama, sahur on the road, buka puasa komunal, dan kegiatan Ramadhan lainnya.</p>
+          <div class="keg-footer">
+            <span><i class="fas fa-calendar"></i> Tahunan</span>
+          </div>
         </div>
 
-
-        <!--
-          - Didukung Oleh
-        -->
-
-        <section class="clients"><br/>
-          <h2 class="h2 clients-title">Didukung Oleh<hr></h2>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="https://tanjuanggadang-limapuluhkotakab.desa.id/">
-                <img src="./assets/images/go/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://bkpsdm.limapuluhkotakab.go.id/">
-                <img src="./assets/images/go/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://1sekolah.com">
-                <img src="./assets/images/go/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="visi misi" data-page="visi misi">
-
-        <header>
-          <h2 class="h2 article-title">Visi & Misi</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Visi</h3>
+        <div class="keg-card reveal" data-delay="2">
+          <div class="keg-icon flag"><i class="fas fa-flag"></i></div>
+          <div class="keg-tag nasional">17 Agustus</div>
+          <h3>Lomba 17 Agustus</h3>
+          <p>Berbagai perlombaan seru dan atraktif dalam memperingati hari kemerdekaan Indonesia.</p>
+          <div class="keg-footer">
+            <span><i class="fas fa-calendar"></i> Tahunan</span>
           </div>
+        </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Berkarakter, Daya Saing, dan Berbudaya.</h4>
-
-              <p class="timeline-text">
-              Terwujudnya pemuda pemudi Indonesia yang berkarakter, berdaya saing, dan berbudaya, yang mampu berperan aktif dalam pembangunan bangsa dan negara.
-              </p>
-
-            </li>
-    
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Misi</h3>
+        <div class="keg-card reveal" data-delay="3">
+          <div class="keg-icon sosial"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="keg-tag sosial-tag">Sosial</div>
+          <h3>Bakti Sosial</h3>
+          <p>Gotong royong, pembersihan lingkungan, dan kegiatan sosial untuk membantu masyarakat.</p>
+          <div class="keg-footer">
+            <span><i class="fas fa-calendar"></i> Bulanan</span>
           </div>
+        </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Meningkatkan keimanan dan ketakwaan kepada Tuhan Yang Maha Esa</h4>
-
-              <p class="timeline-text">
-                Pemuda pemudi yang beriman dan bertakwa akan memiliki landasan moral yang kuat untuk menjalani kehidupannya. Mereka akan memiliki nilai-nilai luhur, seperti kejujuran, tanggung jawab, dan cinta kasih.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mengembangkan potensi diri dan berdaya saing</h4>
-
-              <p class="timeline-text">
-                Pemuda pemudi yang memiliki potensi diri yang berkembang akan memiliki kemampuan dan keterampilan yang dibutuhkan untuk menghadapi tantangan di masa depan. Mereka akan mampu bersaing secara global dan memberikan kontribusi positif bagi bangsa dan negara.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mempererat persatuan dan kesatuan bangsa</h4>
-
-              <p class="timeline-text">
-                Pemuda pemudi yang bersatu akan mampu mewujudkan cita-cita bangsa. Mereka akan saling menghormati dan menghargai perbedaan, serta bekerja sama untuk membangun bangsa yang kuat dan sejahtera.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Dukungan</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Anak-Anak</h5>
-                <data value="20">20%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 20%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Pemuda/i</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Orang Tua</h5>
-                <data value="90">78%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 78%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Lainnya</h5>
-                <data value="50">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="kegiatan" data-page="kegiatan">
-
-        <header>
-          <h2 class="h2 article-title">Kegiatan</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Pemuda/i</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Keagamaan</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Lainnya</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Pemuda/i</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Keagamaan</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Lainnya</button>
-              </li>
-
-            </ul>
-
+        <div class="keg-card reveal" data-delay="4">
+          <div class="keg-icon pemuda"><i class="fas fa-trophy"></i></div>
+          <div class="keg-tag pemuda-tag">Kepemudaan</div>
+          <h3>Pengembangan Pemuda</h3>
+          <p>Pelatihan kepemimpinan, seminar, dan kegiatan pengembangan skill untuk anggota.</p>
+          <div class="keg-footer">
+            <span><i class="fas fa-calendar"></i> Triwulan</span>
           </div>
+        </div>
+
+        <div class="keg-card reveal" data-delay="5">
+          <div class="keg-icon lingkungan"><i class="fas fa-leaf"></i></div>
+          <div class="keg-tag lingkungan-tag">Lingkungan</div>
+          <h3>Event Lingkungan</h3>
+          <p>Penghijauan, penanaman pohon, dan kegiatan peduli lingkungan hidup sekitar.</p>
+          <div class="keg-footer">
+            <span><i class="fas fa-calendar"></i> Bulanan</span>
+          </div>
+        </div>
 
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="keagamaan">
-              <a href="./assets/post/post-2.html">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-2.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @_wwulannn
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/thum/thum-4.jpg" alt="brawlhalla" loading="lazy">
-                </figure>
-              
-              <p class="project-category">Keagamaaan</p>
-
-                <h3 class="project-title">Wira Wirid Silaturahmi</h3>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="keagamaan">
-              <a href="./assets/images/project-4.png">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-1.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @harunalfala_
-      
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-              
-              <p class="project-category">Keagamaaan</p>
-
-                <h3 class="project-title">Lomba Sholat+Doa (anak-anak) & MTQ Lansia (+40 Tahun)</h3>
-
-              </a>
-            </li>
-
-                        <li class="project-item  active" data-filter-item data-category="keagamaan">
-              <a href="./assets/thum/thum-3.jpg">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-2.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @fitriiiyy__
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/thum/thum-3.jpg" alt="brawlhalla" loading="lazy">
-                </figure>
-              
-              <p class="project-category">Keagamaan</p>
-
-                <h3 class="project-title">Wirid Pengajian 22 Agustus 2023</h3>
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="pemuda/i">
-              <a href="./assets/thum/thum-5.jpg">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-2.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @siilviaa__
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/thum/thum-5.jpg" alt="brawlhalla" loading="lazy">
-                </figure>
-              
-              <p class="project-category">Pemuda/i</p>
-
-                <h3 class="project-title">Tournament ML 17 Agustus 2023</h3>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="keagamaan">
-              <a href="./assets/images/project-9.jpg">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-2.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @ivory_roses21
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.jpg" alt="task manager" loading="lazy">
-                </figure>
-          
-                <p class="project-category">Keagamaan</p>
-
-                <h3 class="project-title">Ramadhan 2023</h3>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="lainnya">
-              <a href="./assets/images/project-1.jpg">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-1.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @harunalfala_
-      
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-                
-                <p class="project-category">Lainnya</p>
-
-                <h3 class="project-title">Kondangan ke alumni pemudi</h3>
-
-              </a>
-            </li>
-
-<li class="project-item  active" data-filter-item data-category="pemuda/i">
-              <a href="./assets/images/project-3.jpg">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-1.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @harunalfala_
-      
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-                
-                <p class="project-category">Pemuda/i</p>
-
-                <h3 class="project-title">17 Agustus 2023</h3>
-
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="keagamaan">
-              <a href="./assets/images/project-8.jpg">
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-1.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @harunalfala_
-      
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div><br/>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-                
-                <p class="project-category">Keagamaan</p>
-
-                <h3 class="project-title">Wirid Pengajian _/_/_</h3>
-                
-              </a>
-            </li>
-            
-            <div class="popup-container" onclick="window.location.href='/assets/idx/idx.html'">
-        +
-    </div>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-
-
-
-
-
-
-      <article class="donasi" data-page="donasi">
-
-        <header>
-          <h2 class="h2 article-title">Donasi</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-<div class="user-info-container">
-  <img src="./assets/images/pp/pp-1.png" alt="Profil" class="profile-img" width="50" height="50">
-  <div class="admin-info">
-    <h4 class="h4 testimonials-item-title" data-testimonials-title>
-      @harunalfala_
-      
-    </h4>
-
-    <!-- Teks Admin -->
-    <p class="admin-text">Admin</p>
-  </div>
-  </div>
-
-
-            <li class="blog-post-item">
-  <a href="https://kitabisa.com/campaign/mss">
-
-    <figure class="blog-banner-box">
-      <img src="./assets/images/blog-1.jpg" alt="Sedekah Jariyah" loading="lazy">
-    </figure>
-
-    <div class="blog-content">
-
-      <div class="blog-meta">
-        <p class="blog-category">Donasi</p>
-
-        <span class="dot"></span>
-
-        <time datetime="2023-11-13">Nov 13, 2023</time>
       </div>
-
-      <h3 class="h3 blog-item-title">Pembangunan Musholla</h3>
-
-      <p class="blog-text">
-        Bantu Proses pembangunan Musholla Sholihin Siluang
-      </p>
-
     </div>
+  </section>
 
-  </a>
-</li>
+  <!-- BERITA -->
+  <section class="berita" id="berita">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Update Terkini</div>
+        <h2 class="section-title">Berita & <em>Kegiatan</em></h2>
+        <p>Informasi terbaru seputar aktivitas Remaja Sholihin Siluang</p>
+      </div>
+      <div class="berita-grid">
 
+        <div class="berita-card featured reveal">
+          <div class="berita-img">
+            <div class="img-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+            <div class="berita-category">Keagamaan</div>
+          </div>
+          <div class="berita-body">
+            <div class="berita-meta">
+              <span><i class="fas fa-clock"></i> 15 Januari 2025</span>
+              <span><i class="fas fa-eye"></i> 248 views</span>
+            </div>
+            <h3>Pengajian Akbar Menyambut Tahun Baru Islam 1447 H</h3>
+            <p>Remaja Sholihin Siluang sukses menggelar pengajian akbar dalam rangka menyambut tahun baru Islam. Ratusan warga hadir memadati mushola Sholihin Siluang.</p>
+            <a href="#" class="berita-btn">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="berita-card reveal">
+          <div class="berita-img">
+            <div class="img-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+            <div class="berita-category agustusan">17 Agustus</div>
+          </div>
+          <div class="berita-body">
+            <div class="berita-meta">
+              <span><i class="fas fa-clock"></i> 18 Agustus 2024</span>
+            </div>
+            <h3>Meriah! Lomba 17 Agustus Diikuti 200 Peserta</h3>
+            <p>Peringatan HUT RI ke-79 dimeriahkan berbagai perlombaan seru yang diikuti anak-anak hingga dewasa di lingkungan Siluang.</p>
+            <a href="#" class="berita-btn">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="berita-card reveal">
+          <div class="berita-img">
+            <div class="img-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+            <div class="berita-category sosial-cat">Bakti Sosial</div>
+          </div>
+          <div class="berita-body">
+            <div class="berita-meta">
+              <span><i class="fas fa-clock"></i> 5 Desember 2024</span>
+            </div>
+            <h3>Bakti Sosial & Bersih Lingkungan Serentak</h3>
+            <p>Seluruh anggota Remaja Sholihin Siluang bersatu dalam kegiatan bakti sosial membersihkan lingkungan dan saluran air warga.</p>
+            <a href="#" class="berita-btn">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="berita-more reveal">
+        <a href="#" class="btn btn-outline-green">
+          Lihat Semua Berita <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="galeri" id="galeri">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Galeri Foto</div>
+        <h2 class="section-title">Momen <em>Bersama</em></h2>
+        <p>Kumpulan foto kegiatan dan momen berharga bersama</p>
+      </div>
+      <div class="galeri-grid">
+        <div class="galeri-item large reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>Pengajian Akbar</span></div></div>
+        <div class="galeri-item reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>17 Agustus</span></div></div>
+        <div class="galeri-item reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>Bakti Sosial</span></div></div>
+        <div class="galeri-item tall reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>Ramadhan</span></div></div>
+        <div class="galeri-item reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>Kegiatan Pemuda</span></div></div>
+        <div class="galeri-item reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>Gotong Royong</span></div></div>
+        <div class="galeri-item reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>Pelatihan</span></div></div>
+        <div class="galeri-item large reveal"><div class="galeri-placeholder"><i class="fas fa-camera"></i><span>Penghijauan</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="kontak" id="kontak">
+    <div class="container">
+      <div class="kontak-wrapper reveal">
+        <div class="kontak-info">
+          <div class="section-label light">Hubungi Kami</div>
+          <h2 class="section-title light">Mari <em>Bergabung</em> Bersama Kami</h2>
+          <p>Jadilah bagian dari keluarga besar Remaja Sholihin Siluang dan berkontribusi untuk kemajuan bersama.</p>
+          <div class="kontak-details">
+            <div class="kontak-item">
+              <div class="kontak-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Alamat</strong>
+                <span>Mushola Sholihin, Siluang, Sumatera Barat</span>
+              </div>
+            </div>
+            <div class="kontak-item">
+              <div class="kontak-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong>Telepon/WhatsApp</strong>
+                <span>+62 812-XXXX-XXXX</span>
+              </div>
+            </div>
+            <div class="kontak-item">
+              <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>remajas.siluang@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="sosmed">
+            <a href="#" class="sosmed-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="sosmed-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="sosmed-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="sosmed-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="kontak-form-wrap">
+          <form class="kontak-form" id="kontakForm">
+            <h3>Kirim Pesan</h3>
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" placeholder="Masukkan nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label>Email / WhatsApp</label>
+              <input type="text" placeholder="Email atau nomor WA" required />
+            </div>
+            <div class="form-group">
+              <label>Pesan</label>
+              <textarea placeholder="Tulis pesan Anda..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="#2E7D32" stroke="#4CAF50" stroke-width="2"/>
+              <path d="M24 8 L26 18 L36 18 L28 24 L31 34 L24 28 L17 34 L20 24 L12 18 L22 18 Z" fill="#A5D6A7"/>
+            </svg>
+          </div>
+          <div>
+            <div class="footer-name">Remaja Sholihin Siluang</div>
+            <div class="footer-tagline">Bersatu, Berkarya, Berdampak</div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#galeri">Galeri</a></li>
           </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="lainnya" data-page="lainnya">
-
-        <header>
-          <h2 class="h2 article-title">Games</h2>
-        </header>
-      
-        <section class="contact-form">
-
-          <h3 class="h3 article">Comming Soon!</h3>
-
-        </section>
-
-      </article>
-
+        </div>
+        <div class="footer-links">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="#">Pengajian Rutin</a></li>
+            <li><a href="#">Event Ramadhan</a></li>
+            <li><a href="#">Lomba 17 Agustus</a></li>
+            <li><a href="#">Bakti Sosial</a></li>
+            <li><a href="#">Kepemudaan</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Mushola Sholihin, Siluang, Sumatera Barat</p>
+          <p><i class="fab fa-whatsapp"></i> +62 812-XXXX-XXXX</p>
+          <div class="footer-sosmed">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Remaja Sholihin Siluang. Dibuat dengan <i class="fas fa-heart"></i> untuk pemuda Siluang.</p>
+      </div>
     </div>
+  </footer>
 
-  </main>
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
-            </html>
+</html>
